@@ -4,15 +4,12 @@ import axios from './axios'
 import './Row.css';
 import movieTrailer from "movie-trailer";
 
+
 const base_url = "https://image.tmdb.org/t/p/original";
-
-
-
 function Row({title, fetchUrl, isLargeRow}) {
     const [movies, setMovies] = useState([]);
 
     const [trailerUrl, setTrailerUrl] = useState("");
-
 
     //A snippet of code which runs based on specific condition
     useEffect(() => {
@@ -65,4 +62,4 @@ function Row({title, fetchUrl, isLargeRow}) {
     )
 }
 
-export default Row
+export default Row;
